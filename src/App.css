@@ -1,0 +1,52 @@
+.app {
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    transition: background-color 0.5s;
+    position: relative;
+}
+
+.appTitle {
+    text-align: center;
+    font-size: 50px;
+    color: #FDF500;
+    padding: 20px 0;
+    cursor: pointer;
+    text-shadow: 3px 3px 4px rgba(150, 150, 150, 1);
+}
+
+.pokemonList {
+    margin-top: 30px;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.appPokemonsBtn, .appThemeBtn {
+    margin: 20px 0;
+    width: 70px;
+    height: 35px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+.appThemeBtn {
+    position: fixed;
+    left: 20px;
+    height: 40px;
+}
+
+.appPokemonsBtn:hover {
+    transform: scale(1.2);
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
