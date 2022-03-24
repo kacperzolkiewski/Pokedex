@@ -6,7 +6,7 @@ interface InfoProps {
     height: number;
 }
 
-export const PokemonInfo: React.FC<InfoProps> = ({weight, height}) => {
+export const PokemonInfo: React.FC<InfoProps> = ({weight, height}): JSX.Element => {
   return (
     <div className='pokemonInfo'>
         <span className="pokemonInfoText">Weight: {weight}</span>

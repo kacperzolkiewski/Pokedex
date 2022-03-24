@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { PokemonContext } from '../../context/PokemonContext/PokemonContext'
 import { Pokemon } from '../Pokemon/Pokemon'
 
-export const PokemonList: React.FC = () => {
+export const PokemonList: React.FC = (): JSX.Element => {
     const { state } = useContext(PokemonContext)
  
     return (

@@ -1,7 +1,7 @@
-import { useContext } from 'react';
+import React, { useContext } from 'react';
 import { ThemeContext } from '../../context/ThemeContext/ThemeContext';
 
-export const ThemeButton = (): JSX.Element => {
+export const ThemeButton: React.FC = (): JSX.Element => {
     const { theme, setTheme } = useContext(ThemeContext);
 
     const swapTheme = () => {

@@ -7,7 +7,7 @@ type PokemonProps = {
     pokemon: IPokemon;
 }
 
-export const Pokemon: React.FC<PokemonProps> = ({pokemon}) => {
+export const Pokemon: React.FC<PokemonProps> = ({pokemon}): JSX.Element => {
     const [showInfo, setShowInfo] = useState<boolean>(false);
 
     return (
